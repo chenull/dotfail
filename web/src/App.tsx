@@ -6,6 +6,7 @@ import Routes from 'src/Routes'
 
 import { AuthProvider, useAuth } from './auth'
 
+import '@fontsource/inter/variable.css'
 import './scaffold.css'
 import './index.css'
 
