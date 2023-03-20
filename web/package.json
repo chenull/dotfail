@@ -13,6 +13,9 @@
     ]
   },
   "dependencies": {
+    "@fontsource/inter": "^4.5.15",
+    "@headlessui/react": "^1.7.13",
+    "@heroicons/react": "^2.0.16",
     "@redwoodjs/auth": "4.3.1",
     "@redwoodjs/auth-dbauth-web": "4.3.1",
     "@redwoodjs/forms": "4.3.1",
@@ -20,6 +23,7 @@
     "@redwoodjs/vite": "4.3.1",
     "@redwoodjs/web": "4.3.1",
     "@simplewebauthn/browser": "^7.0.0",
+    "classix": "^2.1.24",
     "date-fns": "^2.29.3",
     "prop-types": "15.8.1",
     "react": "17.0.2",
@@ -27,6 +31,9 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.28.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
     "@testing-library/user-event": "^14.4.3",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.20",

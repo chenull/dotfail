@@ -19,8 +19,8 @@ const Routes = () => {
       <Route path="/create-password" page={CreatePasswordPage} name="createPassword" />
       <Route path="/verification" page={VerificationPage} name="verification" />
       <Route path="/verification-reset" page={VerificationResetPage} name="verificationReset" />
+      <Route path="/" page={HomePage} name="home" />
       <Set wrap={MainLayout}>
-        <Route path="/" page={HomePage} name="home" />
         <Route notfound page={NotFoundPage} />
         <Route path="/forbidden" page={ForbiddenPage} name="forbidden" />
       </Set>
