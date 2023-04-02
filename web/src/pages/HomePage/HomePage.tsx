@@ -1,6 +1,8 @@
 import { Link } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 
+import { NavBar } from 'src/components/NavBar/NavBar'
+
 const HomePage = () => {
   return (
     <>
@@ -16,141 +18,7 @@ const HomePage = () => {
             id="page-content"
             className="flex max-w-full flex-auto flex-col"
           >
-            {/* Hero */}
-            <div className="overflow-hidden bg-white">
-              {/* Header */}
-              <header
-                id="page-header"
-                className="flex flex-none items-center bg-white py-10"
-              >
-                <div className="container mx-auto flex flex-col space-y-6 px-4 text-center md:flex-row md:items-center md:justify-between md:space-y-0 lg:px-8 xl:max-w-7xl">
-                  <div>
-                    <Link
-                      to="#"
-                      className="inline-flex items-center space-x-2 text-lg font-bold tracking-wide text-indigo-600 hover:text-indigo-400"
-                    >
-                      <svg
-                        stroke="currentColor"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="hi-outline hi-cube-transparent inline-block h-6 w-6 opacity-75"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-                        />
-                      </svg>
-                      <span>Company</span>
-                    </Link>
-                  </div>
-                  <div className="flex flex-col space-y-6 text-center md:flex-row md:items-center md:justify-between md:space-y-0 md:space-x-10">
-                    <nav className="space-x-4 md:space-x-6">
-                      <Link
-                        to="#"
-                        className="font-semibold text-gray-900 hover:text-gray-500"
-                      >
-                        <span>Features</span>
-                      </Link>
-                      <Link
-                        to="#"
-                        className="font-semibold text-gray-900 hover:text-gray-500"
-                      >
-                        <span>Plans</span>
-                      </Link>
-                      <Link
-                        to="#"
-                        className="font-semibold text-gray-900 hover:text-gray-500"
-                      >
-                        <span>About</span>
-                      </Link>
-                    </nav>
-                    <div className="flex items-center justify-center space-x-2">
-                      <Link
-                        to="#"
-                        className="inline-flex items-center justify-center space-x-2 rounded border border-gray-300 bg-white px-3 py-2 font-semibold leading-6 text-gray-800 shadow-sm hover:border-gray-300 hover:bg-gray-100 hover:text-gray-800 hover:shadow focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:border-white active:bg-white active:shadow-none"
-                      >
-                        <span>Sign In</span>
-                        <svg
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="hi-solid hi-arrow-right inline-block h-5 w-5 opacity-50"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </header>
-              {/* END Header */}
-
-              {/* Hero Content */}
-              <div className="container mx-auto flex flex-col space-y-16 px-4 py-16 text-center lg:flex-row-reverse lg:space-y-0 lg:px-8 lg:py-32 lg:text-left xl:max-w-7xl">
-                <div className="lg:flex lg:w-1/2 lg:items-center">
-                  <div>
-                    <div className="mb-2 inline-flex rounded bg-emerald-200 px-2 py-1 text-sm font-semibold leading-4 text-emerald-700">
-                      New dashboard is live!
-                    </div>
-                    <h2 className="mb-4 text-3xl font-extrabold md:text-4xl">
-                      Premium leads for all your SaaS projects
-                    </h2>
-                    <h3 className="text-lg font-medium text-gray-600 md:text-xl md:leading-relaxed">
-                      Focus on building your amazing service and we will do the
-                      rest. We grew more than 10,000 online businesses.
-                    </h3>
-                    <div className="flex flex-col justify-center space-y-2 pt-10 pb-16 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-2 lg:justify-start">
-                      <Link
-                        to="#"
-                        className="inline-flex items-center justify-center space-x-2 rounded border border-indigo-700 bg-indigo-700 px-6 py-4 font-semibold leading-6 text-white hover:border-indigo-800 hover:bg-indigo-800 hover:text-white focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:border-indigo-700 active:bg-indigo-700"
-                      >
-                        <span>Join us today</span>
-                        <svg
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="hi-solid hi-arrow-right inline-block h-5 w-5 opacity-50"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </Link>
-                      <Link
-                        to="#"
-                        className="inline-flex items-center justify-center space-x-2 rounded border border-gray-200 bg-gray-200 px-6 py-4 font-semibold leading-6 text-gray-700 hover:border-gray-300 hover:bg-gray-300 hover:text-gray-700 focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:border-gray-200 active:bg-gray-200"
-                      >
-                        <span>Start a 30-day trial</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="lg:mr-16 lg:flex lg:w-1/2 lg:items-center lg:justify-center">
-                  <div className="relative lg:w-96">
-                    <div className="absolute top-0 left-0 h-48 w-32 -translate-y-12 -translate-x-16 -rotate-3 transform text-indigo-100 pattern-dots-xl md:h-96" />
-                    <div className="absolute bottom-0 right-0 h-48 w-32 translate-y-12 translate-x-16 rotate-3 transform text-indigo-100 pattern-dots-xl md:h-96" />
-                    <div className="absolute top-0 right-0 -mt-12 -mr-12 h-32 w-32 rounded-full bg-yellow-200 bg-opacity-50" />
-                    <div className="absolute bottom-0 left-0 -mb-10 -ml-10 h-32 w-32 rotate-3 transform rounded-xl bg-indigo-200 bg-opacity-50" />
-                    <img
-                      src="https://cdn.tailkit.com/media/placeholders/photo-MChSQHxGZrQ-800x1000.jpg"
-                      alt="Hero"
-                      className="relative mx-auto rounded-lg shadow-lg"
-                    />
-                  </div>
-                </div>
-              </div>
-              {/* END Hero Content */}
-            </div>
-            {/* END Hero */}
+            <NavBar />
 
             {/* Features Section: With Images */}
             <div className="bg-gray-100">
