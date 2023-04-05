@@ -8,18 +8,23 @@ import { TeamsLayout } from './layouts/Admin/TeamsLayout'
 import { UsersLayout } from './layouts/Admin/UsersLayout'
 import { MainLayout } from './layouts/Main/MainLayout/MainLayout'
 import { ProfileLayout } from './layouts/ProfileLayout'
+import { PublicLayout } from './layouts/PublicLayout'
 
 const Routes = () => {
   return (
     <Router useAuth={useAuth}>
-      <Route path="/login" page={LoginPage} name="login" />
-      <Route path="/signup" page={SignupPage} name="signup" />
-      <Route path="/forgot-password" page={ForgotPasswordPage} name="forgotPassword" />
-      <Route path="/reset-password" page={ResetPasswordPage} name="resetPassword" />
-      <Route path="/create-password" page={CreatePasswordPage} name="createPassword" />
-      <Route path="/verification" page={VerificationPage} name="verification" />
-      <Route path="/verification-reset" page={VerificationResetPage} name="verificationReset" />
-      <Route path="/" page={HomePage} name="home" />
+      <Set wrap={PublicLayout}>
+        <Route path="/" page={HomePage} name="home" />
+        <Route path="/pricing" page={PricingPage} name="pricing" />
+        <Route path="/blog" page={BlogPage} name="blog" />
+        <Route path="/login" page={LoginPage} name="login" />
+        <Route path="/signup" page={SignupPage} name="signup" />
+        <Route path="/forgot-password" page={ForgotPasswordPage} name="forgotPassword" />
+        <Route path="/reset-password" page={ResetPasswordPage} name="resetPassword" />
+        <Route path="/create-password" page={CreatePasswordPage} name="createPassword" />
+        <Route path="/verification" page={VerificationPage} name="verification" />
+        <Route path="/verification-reset" page={VerificationResetPage} name="verificationReset" />
+      </Set>
       <Set wrap={MainLayout}>
         <Route path="/app/dashboard" page={AppDashboardPage} name="appDashboard" />
         <Route notfound page={NotFoundPage} />
